@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="App1.AppShell"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:local="clr-namespace:App1"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pages="clr-namespace:App1.Pages"
+    mc:Ignorable="d">
+    <FlyoutItem Title="FlyoutItemTitle">
+        <FlyoutItem.Icon>
+            <FontImageSource
+                FontFamily="MR"
+                Glyph="&#xe30d;"
+                Color="Black" />
+        </FlyoutItem.Icon>
+        <Tab Title="Tab1">
+            <Tab.Icon>
+                <FontImageSource
+                    FontFamily="MR"
+                    Glyph="&#xe3ec;"
+                    Color="Black" />
+            </Tab.Icon>
+            <ShellContent Title="ShellContent-A">
+                <pages:MainPage Title="AAAA" />
+            </ShellContent>
+            <ShellContent Title="ShellContent-B">
+                <pages:MainPage Title="BBBB" />
+            </ShellContent>
+        </Tab>
+        <Tab Title="Tab2">
+            <Tab.Icon>
+                <FontImageSource
+                    FontFamily="MR"
+                    Glyph="&#xe3e9;"
+                    Color="Black" />
+            </Tab.Icon>
+            <ShellContent Title="Shell-A">
+                <pages:FirstPage Title="AAAA" />
+            </ShellContent>
+            <ShellContent Title="Shell-B">
+                <pages:FirstPage Title="BBBB" />
+            </ShellContent>
+        </Tab>
+    </FlyoutItem>
+    <MenuItem Clicked="MenuItem1_Clicked" Text="開網頁" />
+    <MenuItem Clicked="MenuItem2_Clicked" Text="打電話" />
+</Shell>
